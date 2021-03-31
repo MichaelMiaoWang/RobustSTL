@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4382A3826146B370068FF02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A3726146B370068FF02 /* main.cpp */; };
+		D4382A4626146C250068FF02 /* vectorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A4526146C250068FF02 /* vectorTest.cpp */; };
+		D4382A4C261472E20068FF02 /* listTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A4B261472E20068FF02 /* listTest.cpp */; };
+		D4382A4F261473150068FF02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A4E261473150068FF02 /* main.cpp */; };
+		D4382A5F261499910068FF02 /* stackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A5C261493610068FF02 /* stackTest.cpp */; };
+		D4382A682614A2090068FF02 /* queueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A672614A2090068FF02 /* queueTest.cpp */; };
+		D4382A702614A6030068FF02 /* dequeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4382A6F2614A6030068FF02 /* dequeTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,24 @@
 
 /* Begin PBXFileReference section */
 		D4382A3426146B370068FF02 /* RobustSTL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobustSTL; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4382A3726146B370068FF02 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D4382A4326146B860068FF02 /* vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = vector.h; sourceTree = "<group>"; };
+		D4382A4426146BC30068FF02 /* dsexceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dsexceptions.h; sourceTree = "<group>"; };
+		D4382A4526146C250068FF02 /* vectorTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorTest.cpp; sourceTree = "<group>"; };
+		D4382A4926146CFB0068FF02 /* list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		D4382A4B261472E20068FF02 /* listTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = listTest.cpp; sourceTree = "<group>"; };
+		D4382A4E261473150068FF02 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D4382A52261473490068FF02 /* vectorTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vectorTest.h; sourceTree = "<group>"; };
+		D4382A56261481630068FF02 /* listTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = listTest.h; sourceTree = "<group>"; };
+		D4382A5826148E1C0068FF02 /* deque.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deque.h; sourceTree = "<group>"; };
+		D4382A5926148E2B0068FF02 /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		D4382A5A26148E350068FF02 /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		D4382A5C261493610068FF02 /* stackTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stackTest.cpp; sourceTree = "<group>"; };
+		D4382A5D261493610068FF02 /* stackTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = stackTest.h; sourceTree = "<group>"; };
+		D4382A672614A2090068FF02 /* queueTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = queueTest.cpp; sourceTree = "<group>"; };
+		D4382A6B2614A21A0068FF02 /* queueTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = queueTest.h; sourceTree = "<group>"; };
+		D4382A6E2614A5F40068FF02 /* dequeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dequeTest.h; sourceTree = "<group>"; };
+		D4382A6F2614A6030068FF02 /* dequeTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dequeTest.cpp; sourceTree = "<group>"; };
+		D4382A732614AB7E0068FF02 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +63,9 @@
 		D4382A2B26146B370068FF02 = {
 			isa = PBXGroup;
 			children = (
-				D4382A3626146B370068FF02 /* RobustSTL */,
+				D4382A732614AB7E0068FF02 /* README.md */,
+				D4382A4126146B620068FF02 /* tests */,
+				D4382A4026146B5A0068FF02 /* includes */,
 				D4382A3526146B370068FF02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +78,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4382A3626146B370068FF02 /* RobustSTL */ = {
+		D4382A4026146B5A0068FF02 /* includes */ = {
 			isa = PBXGroup;
 			children = (
-				D4382A3726146B370068FF02 /* main.cpp */,
+				D4382A4326146B860068FF02 /* vector.h */,
+				D4382A4426146BC30068FF02 /* dsexceptions.h */,
+				D4382A4926146CFB0068FF02 /* list.h */,
+				D4382A5826148E1C0068FF02 /* deque.h */,
+				D4382A5926148E2B0068FF02 /* queue.h */,
+				D4382A5A26148E350068FF02 /* stack.h */,
 			);
-			path = RobustSTL;
+			path = includes;
+			sourceTree = "<group>";
+		};
+		D4382A4126146B620068FF02 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				D4382A51261473370068FF02 /* testHeaders */,
+				D4382A4526146C250068FF02 /* vectorTest.cpp */,
+				D4382A6F2614A6030068FF02 /* dequeTest.cpp */,
+				D4382A5C261493610068FF02 /* stackTest.cpp */,
+				D4382A672614A2090068FF02 /* queueTest.cpp */,
+				D4382A4B261472E20068FF02 /* listTest.cpp */,
+				D4382A4E261473150068FF02 /* main.cpp */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		D4382A51261473370068FF02 /* testHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				D4382A52261473490068FF02 /* vectorTest.h */,
+				D4382A56261481630068FF02 /* listTest.h */,
+				D4382A5D261493610068FF02 /* stackTest.h */,
+				D4382A6B2614A21A0068FF02 /* queueTest.h */,
+				D4382A6E2614A5F40068FF02 /* dequeTest.h */,
+			);
+			path = testHeaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4382A3826146B370068FF02 /* main.cpp in Sources */,
+				D4382A682614A2090068FF02 /* queueTest.cpp in Sources */,
+				D4382A5F261499910068FF02 /* stackTest.cpp in Sources */,
+				D4382A4626146C250068FF02 /* vectorTest.cpp in Sources */,
+				D4382A4C261472E20068FF02 /* listTest.cpp in Sources */,
+				D4382A702614A6030068FF02 /* dequeTest.cpp in Sources */,
+				D4382A4F261473150068FF02 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
